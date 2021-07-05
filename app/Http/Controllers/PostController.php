@@ -47,19 +47,19 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //
-        // return $request;
+
+
         if ($request->user()->can_post()) {
+
 
             $request->validate(
                 [
-                    // 'title' => array('Regex:/^[A-Za-z0-9 ]+$/'),
-
-                    'title' => 'bail|required|unique:posts|max:255',
-                    'title' => [new Censore],
-                    'categories' => 'bail|required',
-                    'categories' => [new Censore],
+                    'title' => ['required', 'string', 'unique:posts', new Censore],
+                    'categories' => ['required', new Censore],
                 ]
             );
+
+            // return $request;
 
             $slug = Str::slug($request->title);
 

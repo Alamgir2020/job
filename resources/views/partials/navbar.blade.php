@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-md navbar-dark shadow-sm text-white" style="background-color:rgb(66, 25, 103);">
 
     <a class="navbar-brand" href="{{ url('/') }}">
-        TSC
+        <img src="{{ asset('images/default-monochrome-white.svg') }}" alt="">
     </a>
+
 
     <div id="mySidenav" class="sidenav " style="background-color:rgb(66, 25, 103);">
         <a href="{{ route('searchPostsWithKeywords') }}" class="text-white"><i class="fas fa-search mr-2"></i>Search

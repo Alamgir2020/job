@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
-use App\Models\Post;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use App\Models\Post;
+use App\Rules\Censore;
+use App\Models\Category;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Storage;
 
 class TableOfContentController extends Controller
 {
@@ -53,10 +54,11 @@ class TableOfContentController extends Controller
         // return $request;
         if ($request->user()->can_post()) {
 
+
             $request->validate(
                 [
-                    'title' => 'bail|required|unique:posts|max:255',
-                    'categories' => 'bail|required',
+                    'title' => ['required', 'string', 'unique:posts', new Censore],
+                    'categories' => ['required', new Censore],
                 ]
             );
 
