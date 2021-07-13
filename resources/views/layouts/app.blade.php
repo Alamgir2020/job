@@ -24,7 +24,7 @@
     <title>@yield('title')</title>
 </head>
 
-<body style="background-color:rgb(103, 67, 136);">
+<body style="background-color:rgb(225, 225, 241);">
 
 
     <div id="app">

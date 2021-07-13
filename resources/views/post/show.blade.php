@@ -70,7 +70,11 @@
                         <div class="text-center bg-warning">
                             <h5 class="text-capitalize text-dark">share and help others learn</h5>
                             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                            <div class="addthis_inline_share_toolbox"></div>
+                            {{-- <div class="addthis_inline_share_toolbox"></div> --}}
+
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div class="addthis_inline_share_toolbox_slh0"></div>
+
                         </div>
                     </div>
 
@@ -135,7 +139,7 @@
 
                                 <button
                                     onclick="event.preventDefault();
-                                                                                                                                        document.getElementById('unReport-form').submit();"
+                                                                                                                                                document.getElementById('unReport-form').submit();"
                                     class="btn btn-success btn-sm ml-2"> <i class="fas fa-exclamation-circle mr-2"></i>Undo
                                     Report</button>
 
@@ -158,7 +162,11 @@
                     <div class="text-center bg-warning">
                         <h5 class="text-capitalize text-dark">share and help others learn</h5>
                         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                        <div class="addthis_inline_share_toolbox"></div>
+                        {{-- <div class="addthis_inline_share_toolbox"></div> --}}
+
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <div class="addthis_inline_share_toolbox_slh0"></div>
+
                     </div>
                 </div>
 

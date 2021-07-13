@@ -7,8 +7,8 @@ use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Intervention\Image\Facades\Image;
-use Illuminate\Support\Facades\Storage;
+// use Intervention\Image\Facades\Image;
+// use Illuminate\Support\Facades\Storage;
 
 class CourseController extends Controller
 {
